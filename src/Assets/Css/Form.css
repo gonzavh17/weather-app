@@ -1,0 +1,38 @@
+.form{
+
+    margin: 25px 0 25px 0;
+}
+
+.input{
+    background-color: transparent;
+    border: none;
+    margin: 0px 50px 0px 10px;
+    padding: 15px;
+    font-family: 'Sono', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.date{
+    display: flex;
+    justify-content: center;
+}
+
+.hour{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 420px){
+    .input{
+        margin: 0;
+        padding: 10px;
+    }   
+}

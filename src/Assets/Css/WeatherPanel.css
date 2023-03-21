@@ -1,0 +1,42 @@
+.weather-panel-container{
+    background-color: #F0EBE3;
+    height: 810px;
+    width: 820px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.my-swal-alert{
+    background-color: #000;
+}
+
+@media (max-width: 899px){
+    .weather-panel-container{
+        height: 800px;
+        width: 600px;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 599px){
+    .weather-panel-container{
+        height: 850px;
+        width: 400px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .insert-location{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 420px){
+    .weather-panel-container{
+        height: 1000px;
+        width: 260px;
+    }
+}
