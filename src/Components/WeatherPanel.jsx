@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Form from "./Form.jsx";
 import Card from "./Card.jsx";
 import "../Assets/Css/WeatherPanel.css";
-import swal from "sweetalert";
 
 function WeatherPanel() {
   let urlWeather =
@@ -18,16 +17,16 @@ function WeatherPanel() {
   const [show, setShow] = useState(false);
   const [location, setLocation] = useState("");
 
-  const errorAlert = () => {
-    swal({
-      icon: "error",
-      title: "Oops...",
-      text: "Something went wrong! Please insert a valid Location.",
-      customClass: {
-        container: 'my-swal-alert'
-      }
-    });
-  };
+  // const errorAlert = () => {
+  //   swal({
+  //     icon: "error",
+  //     title: "Oops...",
+  //     text: "Something went wrong! Please insert a valid Location.",
+  //     customClass: {
+  //       container: 'my-swal-alert'
+  //     }
+  //   });
+  // };
 
   const getLocation = async (loc) => {
     setLoading(true);
@@ -48,7 +47,7 @@ function WeatherPanel() {
         console.log(error);
         setLoading(false);
         setShow(false);
-        errorAlert();
+        // errorAlert();
       });
 
     urlForecast = urlForecast + cityUrl + loc;
