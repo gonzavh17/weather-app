@@ -23,7 +23,7 @@
 
 @media (max-width: 599px){
     .weather-panel-container{
-        height: 850px;
+        height: 950px;
         width: 400px;
         display: flex;
         justify-content: flex-start;
@@ -37,6 +37,13 @@
 @media (max-width: 420px){
     .weather-panel-container{
         height: 1000px;
-        width: 260px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 360px){
+    .weather-panel-container{
+        height: 1000px;
+        width: 290px;
     }
 }
