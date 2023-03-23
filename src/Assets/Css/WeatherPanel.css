@@ -24,7 +24,7 @@
 @media (max-width: 599px){
     .weather-panel-container{
         height: 950px;
-        width: 90%;
+        width: 410px;
         display: flex;
         justify-content: flex-start;
     }
